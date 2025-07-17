@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Room homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="nav nav--closed">
+        <div class="nav__toggle nav__toggle">
+          <button class="nav__toggle-hamburger">
+            <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z"
+                fill="#FFF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <button class="nav__toggle-close">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z"
+                fill="#000"
+                fill-rule="evenodd"
+                opacity=".201"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="nav__logo">
+          <img src="./images/logo.svg" alt="room logo" />
+        </div>
+
+        <ul class="nav__links">
+          <li class="nav__link">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav__link">
+            <a href="#">Shop</a>
+          </li>
+          <li class="nav__link">
+            <a href="#">About</a>
+          </li>
+          <li class="nav__link">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        
+        <div class="hero__imageSlider">
+          <div class="hero__imageSlider__track">
+            <div class="hero__imageSlider__slide">
+              <picture>
+                <source
+                  srcset="./images/desktop-image-hero-1.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img src="./images/mobile-image-hero-1.jpg" alt="image 1" />
+              </picture>
+            </div>
+            <div class="hero__imageSlider__slide">
+              <picture>
+                <source
+                  srcset="./images/desktop-image-hero-2.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img src="./images/mobile-image-hero-2.jpg" alt="image 2" />
+              </picture>
+            </div>
+            <div class="hero__imageSlider__slide">
+              <picture>
+                <source
+                  srcset="./images/desktop-image-hero-3.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img src="./images/mobile-image-hero-3.jpg" alt="image 3" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__contentSlider">
+          <div class="hero__contentSlider__track">
+            <div class="hero__contentSlider__slide hero__contentSlider__slide--active" aria-hidden="false" style="--slide-no:1">
+              <h1>Discover innovative ways to decorate</h1>
+              <p>
+                We provide unmatched quality, comfort, and style for property
+                owners across the country. Our experts combine form and function
+                in bringing your vision to life. Create a room in your own style
+                with our collection and make your property a reflection of you
+                and what you love.
+              </p>
+            </div>
+            <div class="hero__contentSlider__slide" aria-hidden="true" style="--slide-no:2">
+              <h1>We are available all across the globe</h1>
+              <p>
+                With stores all over the world, it’s easy for you to find
+                furniture for your home or place of business. Locally, we’re in
+                most major cities throughout the country. Find the branch
+                nearest you using our store locator. Any questions? Don’t
+                hesitate to contact us today.
+              </p>
+            </div>
+            <div class="hero__contentSlider__slide" aria-hidden="true" style="--slide-no:3">
+              <h1>Manufactured with the best materials</h1>
+              <p>
+                Our modern furniture store provide a high level of quality. Our
+                company has invested in advanced technology to ensure that every
+                product is made as perfect and as consistent as possible. With
+                three decades of experience in this industry, we understand what
+                customers want for their home and office.
+              </p>
+            </div>
+
+            <button class="hero__contentSlider__CTA">
+              <span>Shop Now</span>
+              <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                  fill="#000"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__controls">
+          <button class="hero__controls__prev">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 0L1 12l12 12"
+                stroke="#FFF"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button class="hero__controls__next">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 0l12 12L1 24"
+                stroke="#FFF"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="hero__imgDark">
+          <img src="./images/image-about-dark.jpg" alt="dark image dark" />
+        </div>
+
+        <div class="hero__about">
+          <h2>About our furniture</h2>
+          <p>
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+
+        <div class="hero__imgLight">
+          <img src="./images/image-about-light.jpg" alt="dark image light" />
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://fa23bcs233.github.io/portfolio">Muhammad Arham</a>.
+    </div>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
